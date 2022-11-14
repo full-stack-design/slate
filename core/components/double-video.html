@@ -1,0 +1,67 @@
+<style>
+
+  /**
+    * ----------------------------------------
+    * Double Video Section
+    * ----------------------------------------
+    */
+
+  .slate-section__double-video-parent::before {
+    position: absolute;
+    z-index: -1;
+    top: -25%;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    background:
+      linear-gradient(transparent 0%,
+        var(--slate-clr-violet) 48%,
+        var(--slate-clr-violet) 52%,
+        transparent 100%);
+    content: "";
+  }
+  .slate-section__double-video .text p,
+  .slate-section__double-video .text h2,
+  .slate-section__double-video .text h3 {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  /* The 'Brow' */  
+  .slate-section__double-video h5 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+  .slate-section__double-video h5:before,
+  .slate-section__double-video h5:after {
+    border-top: 1px solid var(--slate-clr-indigo);
+    content: '';
+    flex: 1 0 20px;
+  }
+  .slate-section__double-video h5:before {
+    margin: 0 20px 0 0;
+  }
+  .slate-section__double-video h5:after {
+    margin: 0 0 0 20px;
+  }
+  .slate-section__double-video .slate-section__double-video__column .text:first-of-type {
+    margin-bottom: 0.5rem;
+  }
+  .slate-section__double-video .slate-section__double-video__column .text {
+    margin-top: 0.5rem;
+  }
+  .slate-section__double-video .player__container {
+    box-shadow: 30px 30px 60px var(--slate-clr-rose-t60), -30px -30px 60px var(--slate-clr-violet-t60);
+  }
+  @media screen and (min-width: 576px){} /* SM */
+  @media screen and (min-width: 768px){} /* MD */
+  @media screen and (min-width: 992px){} /* LG */
+  @media screen and (min-width: 1024px){} /* ~LG */
+  @media screen and (min-width: 1025px){} /* CMS-LG */
+  @media screen and (min-width: 1200px){} /* XL */
+  @media screen and (min-width: 1400px){} /* XXL */
+
+</style>
