@@ -7,7 +7,7 @@
     */
 
   /* All <section>s, .layouts and .texts to have a baseline position & z-index 
-   * to prevent laying under a '::before/::after effect'
+   * to prevent laying under a ::before/::after accent
    */
   .slate-section-parent {
     position: relative;
@@ -64,7 +64,7 @@
     https://www.smashingmagazine.com/2022/08/fluid-sizing-multiple-media-queries/
   */
   @media screen and (min-width: 576px){ /* SM */
-    /* Bump up <p> size a little when screen is no longer tiny */
+    /* Bump up <p> size a little */
     .slate-section p {
       font-size: 1.1rem !important;
     }
