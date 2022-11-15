@@ -1,0 +1,65 @@
+<style>
+
+  /**
+    * ----------------------------------------
+    * Video - Single
+    * ----------------------------------------
+    */
+
+  .slate-section__single-video-parent::after {
+    position: absolute;
+    top: 0;
+    left: -25%;
+    z-index: -1;
+    background-image: 
+      radial-gradient(82% 40% at 0% 40%, var(--slate-clr-indigo-t60) 0%, transparent 100%), 
+      radial-gradient(80% 50% at 80% 50%, var(--slate-clr-rose-t60) 0%, transparent 100%);
+    right: -25%;
+    height: 120%;
+    content: "";
+  }
+  /* The 'Brow' */
+  .slate-section__single-video h5 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 0 1rem 0;
+    text-align: center;
+  }
+  .slate-section__single-video h5:before,
+  .slate-section__single-video h5:after {
+    border-top: 1px solid var(--slate-clr-indigo);
+    content: '';
+    flex: 1 0 20px;
+  }
+  .slate-section__single-video h5:before {
+    margin: 0 20px 0 0;
+  }
+  .slate-section__single-video h5:after {
+    margin: 0 0 0 20px;
+  }
+  .slate-section__single-video > .single-video .player__container {
+    margin-top: 0.5rem;
+    box-shadow: 20px 20px 40px var(--slate-clr-rose-t40), -20px -20px 40px var(--slate-clr-violet-t40);
+  }
+  .slate-section__single-video > .single-video .tui-bar__active-progress {
+    background: var(--slate-clr-indigo) !important;
+  }
+
+  @media screen and (min-width: 576px){ /* SM */ }
+  @media screen and (min-width: 768px){ /* MD */
+    .slate-section__single-video .layout {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  @media screen and (min-width: 992px){ /* LG */ }
+  @media screen and (min-width: 1024px){ /* ~LG */ }
+  @media screen and (min-width: 1025px){ /* CMS-LG */ }
+  @media screen and (min-width: 1200px){ /* XL */ }
+  @media screen and (min-width: 1400px){ /* XXL */ }
+
+</style>
