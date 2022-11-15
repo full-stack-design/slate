@@ -1,0 +1,39 @@
+<style>
+  /**
+  * ----------------------------------------
+  * Hero (Video)
+  * ----------------------------------------
+  */
+  .slate-section__hero-video .hero-headimage {
+    width: 80% !important;
+    max-width: 400px;
+  }
+  .slate-section__hero-video .img-wrapper-override {
+    width: 100% !important;
+  }
+  .slate-section__hero-video .text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .slate-section__hero-video a.btn {
+    margin-top: 0.5rem;
+  }
+  .slate-section__hero-video .hero-video {
+    position: relative !important;
+  }
+  .hero-video::after {
+    bottom: 0;
+    height: 40%;
+    top: initial;
+    background: linear-gradient(to top, var(--slate-clr-max-black) 0%, transparent 100%);
+    content: "";
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+  }
+  .slate-section__hero-video .hero-video__content {
+    margin-top: auto;
+    padding-bottom: 2rem;
+    z-index: 1;
+  }
+</style>
