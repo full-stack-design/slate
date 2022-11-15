@@ -1,9 +1,9 @@
 <style>
-/**
-  * ----------------------------------------
-  * Grid of Titles (GOT)
-  * ----------------------------------------
-  */
+  /**
+    * ----------------------------------------
+    * Grid of Titles (GOT)
+    * ----------------------------------------
+    */
   .titles-grid-parent {
     position: relative;
   }
@@ -70,5 +70,4 @@
   @media screen and (min-width: 1025px){} /* CMS-LG */
   @media screen and (min-width: 1200px){} /* XL */
   @media screen and (min-width: 1400px){} /* XXL */
-
 </style>

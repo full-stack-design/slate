@@ -1,11 +1,9 @@
 <style>
-
   /**
     * ----------------------------------------
-    * Single Video Band
+    * Single Video
     * ----------------------------------------
     */
-
   .slate-section__single-video-parent::after {
     position: absolute;
     top: 0;

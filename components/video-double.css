@@ -1,11 +1,9 @@
 <style>
-
   /**
     * ----------------------------------------
-    * Double Video Section
+    * Double Video
     * ----------------------------------------
     */
-
   .slate-section__double-video-parent::before {
     position: absolute;
     z-index: -1;
@@ -63,5 +61,4 @@
   @media screen and (min-width: 1025px){} /* CMS-LG */
   @media screen and (min-width: 1200px){} /* XL */
   @media screen and (min-width: 1400px){} /* XXL */
-
 </style>

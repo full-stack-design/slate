@@ -1,11 +1,9 @@
 <style>
   /**
     * ----------------------------------------
-    * 3-Up Hero
+    * Hero with 3-Up
     * ----------------------------------------
     */
-  
-  /* band */
   .slate-section__three-up-hero-parent {
     --three-up-border-clr-1: var(--slate-clr-regal);
     --three-up-border-clr-2:  var(--slate-clr-plum);
@@ -33,7 +31,6 @@
     margin-left: 0;
     padding-top: 100px;
   }
-  
   /* content column */
   .slate-section__three-up-hero-parent > .slate-section__three-up-hero .slate-section__three-up-hero__column--content {}
   .slate-section__three-up-hero-parent > .slate-section__three-up-hero .slate-section__three-up-hero__column--content img {
@@ -102,7 +99,6 @@
     --translateY: 0rem;
     opacity: 1;
   }
-  
   .slate-section__three-up-hero-parent > .slate-section__three-up-hero .slate-section__three-up-hero__column--heros .slate-section__three-up-hero__row .hero-character {
     position: relative;
     display: flex;
@@ -137,7 +133,6 @@
     width: min(2vw,48px);
     min-width: 24px;
   }
-  
   @media screen and (min-width: 576px){ /* SM */
     .slate-section__three-up-hero-parent > .slate-section__three-up-hero .slate-section__three-up-hero__column--heros .slate-section__three-up-hero__row .hero-character__wrapper {
       min-height: min(50vh, 420px);
@@ -176,11 +171,11 @@
       max-width: 480px;
     }
   }
-  @media screen and (min-width: 1024px){
+  @media screen and (min-width: 1024px){ /* ~LG */
     .slate-section__three-up-hero-parent > .slate-section__three-up-hero .slate-section__three-up-hero__column--heros .slate-section__three-up-hero__row .hero-character {
       padding: 2.5rem calc(0.5em + 5px);
     }
-  } /* ~LG */
+  }
   @media screen and (min-width: 1025px){} /* CMS-LG */
   @media screen and (min-width: 1200px){ /* XL */
     .slate-section__three-up-hero-parent > .slate-section__three-up-hero .slate-section__three-up-hero__column--heros .slate-section__three-up-hero__row .hero-character__wrapper {
