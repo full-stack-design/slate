@@ -1,0 +1,81 @@
+<style>
+  /**
+    * ----------------------------------------
+    * Watch Band Section
+    * ----------------------------------------
+    */
+  .slate-section__watch-band-parent::after,
+  .slate-section__watch-band--band-parent::after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: -50%;
+    bottom: 0;
+    left: -50%;
+    display: block;
+    background-image: linear-gradient(200deg, var(--slate-clr-regal), var(--slate-clr-indigo));
+    content: "";
+  }
+  /* Cloudy Band */
+  .slate-section__watch-band--cloud-parent::after {
+    position: absolute;
+    z-index: -1;
+    top: -10% !important;
+    right: -25%;
+    left: -25%;
+    height: 150%;
+    background-image: 
+      radial-gradient(82% 40% at 0% 40%, var(--slate-clr-indigo) 0%, transparent 100%), 
+      radial-gradient(80% 50% at 80% 50%, var(--slate-clr-rose) 0%, transparent 100%);
+    content: "";
+  }
+  .slate-section__watch-band h1 {
+    font-size: 2em;
+  }
+  .slate-section__watch-band p {
+    font-size: 1.1em;
+    line-height: 1.2;
+    color: var(--slate-clr-grey-4);
+  }
+  .slate-section__watch-band h5 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+  .slate-section__watch-band h5:before {
+    margin: 0 20px 0 0;
+    border-top: 1px solid var(--slate-clr-indigo);
+    content: '';
+    flex: 1 0 20px;
+  }
+  .slate-section__watch-band h5:after {
+    margin: 0 0 0 20px;
+    border-top: 1px solid var(--slate-clr-indigo);
+    content: '';
+    flex: 1 0 20px;
+  }
+  .slate-section__watch-band .player__container {
+    box-shadow: 30px 30px 60px var(--slate-clr-rose-t40), -30px -30px 60px var(--slate-clr-violet-t40);
+  }
+  @media screen and (min-width: 576px){} /* SM */
+  @media screen and (min-width: 768px){
+    .slate-section__watch-band-parent::after,
+    .slate-section__watch-band--band-parent::after {
+      top: 19%;
+      bottom: 19%;
+    }
+    .slate-section__watch-band .text .text-center {
+      text-align: left !important;
+    }
+  } /* MD */
+  @media screen and (min-width: 992px){} /* LG */
+  @media screen and (min-width: 1024px){} /* ~LG */
+  @media screen and (min-width: 1025px){} /* CMS-LG */
+  @media screen and (min-width: 1200px){} /* XL */
+  @media screen and (min-width: 1400px){} /* XXL */
+
+</style>

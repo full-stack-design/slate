@@ -1,0 +1,33 @@
+<style>
+  /**
+    * ----------------------------------------
+    * Get Even More (GEM) Section
+    * ----------------------------------------
+    */
+  .slate-section__gem-parent {
+    margin-top: 6rem;
+  }
+  .slate-section__gem .image-grid {
+    margin-top: 1em;
+  }
+  .slate-section__gem .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .slate-section__gem .row .col.col-custom {
+    padding: 0.25rem;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 576px){} /* SM */
+  @media screen and (min-width: 768px){ /* MD */
+    .slate-section__gem .row .col.col-custom {
+      padding: 0.75rem;
+    }
+  }
+  @media screen and (min-width: 992px){} /* LG */
+  @media screen and (min-width: 1024px){} /* ~LG */
+  @media screen and (min-width: 1025px){} /* CMS-LG */
+  @media screen and (min-width: 1200px){} /* XL */
+  @media screen and (min-width: 1400px){} /* XXL */
+</style>

@@ -96,4 +96,4 @@ The color, size or any other style values can be easily over-written by includin
 ```
 
 #### Notes
-Component styles are marked as .css files although they technically become .html files with the addition of the <style> tag
+Component styles are marked as .css files although they technically become .html files with the addition of the <style> tag.
