@@ -1,5 +1,8 @@
 # Slate Design System
 
+[Documentation](https://docs.google.com/document/d/118aDqtW2AZp0_o0QN7OenJNZCx94AkmqtjTJDl3uX4o/edit?usp=sharing)
+
+
 ## The Core 
 These Global Content items include Core Design System Properties and Core Design System Styles. Properties such as colors, sizes, and other predefined style values. The Styles serve as a foundation to the encompassing page templates and components while maintaining consistency across all.
 > Include this snippet in a code module in the uppermost band of all pages using Slate Design System.
@@ -94,3 +97,6 @@ The color, size or any other style values can be easily over-written by includin
   }
 </style>
 ```
+
+#### Notes
+Component styles are marked as .css files although they technically become .html files with the addition of the <style> tag.

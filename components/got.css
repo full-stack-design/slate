@@ -1,0 +1,73 @@
+<style>
+  /**
+    * ----------------------------------------
+    * Grid of Titles (GOT)
+    * ----------------------------------------
+    */
+  .titles-grid-parent {
+    position: relative;
+  }
+  .titles-grid-parent::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+  }
+  .titles-grid-parent:nth-child(odd):before {
+    background:
+      radial-gradient(50% 20% at 50% 20%, var(--slate-clr-indigo-t60) 0%, transparent 100%), 
+      radial-gradient(50% 50% at 20% 50%, var(--slate-clr-magenta-t60) 0%, transparent 100%), 
+      radial-gradient(60% 40% at 70% 60%, var(--slate-clr-rose-t60) 0%, transparent 100%);
+  }
+  .titles-grid-parent:nth-child(even):before {
+    background:
+    radial-gradient(50% 20% at 50% 20%, var(--slate-clr-rose-t60) 0%, transparent 100%), 
+    radial-gradient(50% 50% at 20% 50%, var(--slate-clr-indigo-t60) 0%, transparent 100%), 
+    radial-gradient(60% 40% at 70% 60%, var(--slate-clr-magenta-t60) 0%, transparent 100%);
+  }
+  .titles-grid-parent > .titles-grid h3 {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+  }
+  .titles-grid-parent > .titles-grid .image-grid > .row {
+    margin-inline: -4px;
+  }
+  .titles-grid-parent > .titles-grid .image-grid > .row:hover .image-grid-item {
+    opacity: 0.82;
+  }
+  .titles-grid-parent > .titles-grid .image-grid > .row .image-grid-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    transition: all 200ms;
+    margin-bottom: 0.5em;
+    padding: 0.25em;
+  }
+  .titles-grid-parent > .titles-grid .image-grid > .row .image-grid-item:hover {
+    -webkit-backdrop-filter: blur(0px);
+    opacity: 1;
+    backdrop-filter: blur(0px);
+  }
+  .titles-grid-parent > .titles-grid .image-grid > .row .image-grid-item a {
+    max-width: 100%;
+  }
+  .titles-grid-parent > .titles-grid .image-grid img{
+    border: 1px solid var(--slate-clr-violet);
+    width: 100%;
+  }
+  @media screen and (min-width: 576px){} /* SM */
+  @media screen and (min-width: 768px){} /* MD */
+  @media screen and (min-width: 992px){ /* LG */
+    .titles-grid-parent > .titles-grid .image-grid > .row .image-grid-item {
+      padding: 1rem;
+    }
+  }
+  @media screen and (min-width: 1024px){} /* ~LG */
+  @media screen and (min-width: 1025px){} /* CMS-LG */
+  @media screen and (min-width: 1200px){} /* XL */
+  @media screen and (min-width: 1400px){} /* XXL */
+</style>
