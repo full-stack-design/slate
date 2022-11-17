@@ -1,7 +1,7 @@
 <style>
   /**
     * ----------------------------------------
-    * Watch Band Section
+    * Watch Band
     * ----------------------------------------
     */
   .slate-section__watch-band-parent::after,
@@ -35,7 +35,7 @@
   .slate-section__watch-band p {
     font-size: 1.1em;
     line-height: 1.2;
-    color: var(--slate-clr-grey-4);
+    color: var(--slate-clr-grey-3);
   }
   .slate-section__watch-band h5 {
     position: relative;
