@@ -20,7 +20,7 @@
   .slate-section__watch-band--cloud-parent::after {
     position: absolute;
     z-index: -1;
-    top: -10% !important;
+    top: 0% !important;
     right: -25%;
     left: -25%;
     height: 150%;
@@ -67,6 +67,9 @@
     .slate-section__watch-band--band-parent::after {
       top: 19%;
       bottom: 19%;
+    }
+    .slate-section__watch-band--cloud-parent::after {
+      top: -10% !important;
     }
     .slate-section__watch-band .text .text-center {
       text-align: left !important;
