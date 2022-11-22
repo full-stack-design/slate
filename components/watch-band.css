@@ -59,7 +59,7 @@
     flex: 1 0 20px;
   }
   .slate-section__watch-band .player__container {
-    box-shadow: 30px 30px 60px var(--slate-clr-rose-t40), -30px -30px 60px var(--slate-clr-violet-t40);
+    box-shadow: 30px 30px 60px var(--slate-clr-rose-t70), -30px -30px 60px var(--slate-clr-violet-t70);
   }
   @media screen and (min-width: 576px){} /* SM */
   @media screen and (min-width: 768px){
