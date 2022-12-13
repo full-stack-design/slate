@@ -39,6 +39,33 @@
     color: var(--slate-clr-grey-3);
   }
 
+  /*
+    The H5 Brow
+    */
+  .slate-section__w-brow-parent {
+    z-index: 2;
+  }
+  .slate-section__w-brow h5 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+  .slate-section__w-brow h5:before,
+  .slate-section__w-brow h5:after {
+    border-top: 1px solid var(--slate-clr-indigo);
+    content: '';
+    flex: 1 0 20px;
+  }
+  .slate-section__w-brow h5:before {
+    margin: 0 20px 0 0;
+  }
+  .slate-section__w-brow h5:after {
+    margin: 0 0 0 20px;
+  }
+
   /* 
     Prevent over-length reading-lines 
     https://www.smashingmagazine.com/2014/09/balancing-line-length-font-size-responsive-web-design/
@@ -56,6 +83,7 @@
   .slate-section .tui .tui-bar__active-progress {
     background: var(--slate-clr-rose) !important;
   }
+
   
   /* 
     Mobile/Generic first design
