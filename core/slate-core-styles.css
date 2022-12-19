@@ -80,11 +80,52 @@
   }
 
   /* Theme the Video Players */
-  .slate-section .tui .tui-bar__active-progress {
+  .slate-section .player__container .tui-bar__active-progress {
     background: var(--slate-clr-rose) !important;
   }
+  .slate-section .player__container .tui-volume__active-bar {
+    background: var(--slate-clr-violet) !important;
+  }
+  .slate-section .player__container .tui-bar__control-head, 
+  .slate-section .player__container .tui-volume__control-head {
+    color: var(--slate-clr-violet) !important;
+  }
+  .slate-section .player__container .tui-cc {
+    border-bottom: 4px solid var(--slate-clr-violet) !important;
+  }
 
-  
+  /** 
+   * Video Player 
+   */
+  .slate-section .player__container .tui-control-bar__controls, 
+  .slate-section .player__container .tui-control-bar__background {
+    opacity: 0;
+    transition: all var(--slate-duration-long) var(--slate-ease-sine);
+  }
+  .slate-section .player__container:hover .tui-control-bar__controls, 
+  .slate-section .player__container:hover .tui-control-bar__background {
+    opacity: 1 !important;
+  }
+  .slate-section .player__container .tui-icon-play-circle {
+    transition: all var(--slate-duration-long) var(--slate-ease-sine);
+    text-shadow: var(--slate-clr-max-black) 0px 0px 30px !important;
+  }
+  @supports( filter: drop-shadow(0px 0px 0px currentColor)){
+    .slate-section .player__container .tui-icon-play-circle {
+      text-shadow: none;
+      filter: drop-shadow(0px 0px 4px var(--slate-clr-indigo)) drop-shadow(0px 0px 10px var(--slate-clr-regal-t30));
+    }
+  }
+  .slate-section .player__container:hover .tui-icon-play-circle {
+    transform: scale(1.1);
+  }
+  .slate-section .player__container .tui-start-slate {
+    transition: all var(--slate-duration-long) var(--slate-ease-sine);
+  }
+
+  /* Color Accents */
+
+
   /* 
     Mobile/Generic first design
     https://www.smashingmagazine.com/2017/02/mobile-first-is-just-not-good-enough-meet-journey-driven-design/
