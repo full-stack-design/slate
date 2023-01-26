@@ -1,0 +1,79 @@
+<style>
+  /* ---------- Streaming Devices ---------- */
+  .max-section-device-lockup-parent {
+    position: relative;
+  }
+  .max-section-device-lockup-parent::before {
+    position: absolute;
+    top: -25%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(43% 44% at 50% 50%, rgba(255, 0, 229, 0.4) 0%, transparent 100%);
+    width: 100%;
+    height: 150%;
+    content: "";
+  }
+  .streaming-devices--quad-parent > .streaming-devices--quad .layout > div {
+    position: relative;
+  }
+  .streaming-devices--quad-parent > .streaming-devices--quad .layout > div::before {
+    position: absolute;
+    top: 0;
+    left: -10%;
+    z-index: -1;
+    background: radial-gradient(rgba(255, 0, 229, 0.4) 0%, transparent 80%, transparent 100%);
+    width: 120%;
+    height: 70%;
+    content: "";
+  }
+  .streaming-devices--quad-parent > .streaming-devices--quad .img-wrapper-override {
+    margin-inline: auto;
+    width: min(70%, 320px);
+  }
+  .streaming-devices--quad-parent > .streaming-devices--quad .layout > div:nth-child(3) .img-wrapper-override {
+    max-width: 60%;
+  }
+  .streaming-devices--quad-parent > .streaming-devices--quad p {
+    padding: 1em 4ch 0;
+  }
+  
+  @media screen and (min-width: 576px){} /* SM */
+  @media screen and (min-width: 768px){
+    .titles-grid-parent > .titles-grid .image-grid > .row .image-grid-item a h6 { 
+      font-size: 1rem;
+    }
+    .streaming-devices--quad-parent > .streaming-devices--quad .img-wrapper-override {
+      display: none;
+    }
+    .streaming-devices--quad-parent > .streaming-devices--quad .layout > div::before {
+      content: none;
+    } /* MD */
+    .streaming-devices--quad-parent > .streaming-devices--quad .rich-text {
+      position: relative;
+    }
+    .streaming-devices--quad-parent > .streaming-devices--quad .rich-text::before {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--max-clr-violet);
+      width: 4ch;
+      height: 2px;
+      content: "";
+    }
+    .streaming-devices--quad-parent > .streaming-devices--quad p {
+      padding: 1em 0 0;
+    }
+  }
+  @media screen and (min-width: 992px){ /* LG */
+    .titles-grid-parent > .titles-grid .image-grid > .row .image-grid-item {
+      padding: 1rem;
+    }
+  }
+  @media screen and (min-width: 1024px){} /* ~LG */
+  @media screen and (min-width: 1025px){} /* CMS-LG */
+  @media screen and (min-width: 1200px){} /* XL */
+  @media screen and (min-width: 1400px){} /* XXL */
+  
+  </style>
