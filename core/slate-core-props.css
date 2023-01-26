@@ -110,6 +110,12 @@
       Sizes 
       Global/Consistent Sizing 
     */
+    --slate-bsize-3: var(--slate-size-1);
+    --slate-bsize-2: var(--slate-size-2);
+    --slate-bsize-3: var(--slate-size-3);
+    --slate-bsize-4: var(--slate-size-5);
+    --slate-bsize-5: var(--slate-size-8);
+
     --slate-size-000: -.5rem;
     --slate-size-00: -.25rem;
     --slate-size-1: .25rem;

@@ -35,6 +35,7 @@
   }
   .titles-grid-parent > .titles-grid .image-grid > .row {
     margin-inline: -4px;
+    justify-content: center;
   }
   .titles-grid-parent > .titles-grid .image-grid > .row:hover .image-grid-item {
     opacity: 0.82;

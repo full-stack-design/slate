@@ -37,6 +37,9 @@
     width: 100%;
     max-width: 350px;
   }
+  .slate-section__three-up-hero-parent > .slate-section__three-up-hero .slate-section__three-up-hero__column--content h5 {
+    font-size: 0.8em;
+  }
   .slate-section__three-up-hero-parent > .slate-section__three-up-hero .slate-section__three-up-hero__column--content p {
     max-width: 36ch;
     margin: 0.5rem auto;
@@ -165,7 +168,6 @@
     } 
     .slate-section__three-up-hero-parent > .slate-section__three-up-hero .slate-section__three-up-hero__column--heros .slate-section__three-up-hero__row .hero-character__wrapper {
       min-height: min(90vh, 560px);
-      padding: 5px;
     }
     .slate-section__three-up-hero-parent > .slate-section__three-up-hero .slate-section__three-up-hero__column--content img {
       max-width: 480px;

@@ -39,8 +39,10 @@
     color: var(--slate-clr-grey-3);
   }
 
-  /*
-    The H5 Brow
+  /**
+   * The H5 Brow
+   * Keeping in Core as there are many components that use 'the brow'
+   * TODO: if/when using a scalable CSS framework, consider using an include
     */
   .slate-section__w-brow-parent {
     z-index: 2;
@@ -79,7 +81,16 @@
     line-height: 1.4 !important;
   }
 
-  /* Theme the Video Players */
+  .slate-section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /** 
+   * Video Player 
+   * Keeping in Core as there are many video player components
+   * TODO: if/when using a scalable CSS framework, consider using an include
+   */
   .slate-section .player__container .tui-bar__active-progress {
     background: var(--slate-clr-rose) !important;
   }
@@ -93,10 +104,6 @@
   .slate-section .player__container .tui-cc {
     border-bottom: 4px solid var(--slate-clr-violet) !important;
   }
-
-  /** 
-   * Video Player 
-   */
   .slate-section .player__container .tui-control-bar__controls, 
   .slate-section .player__container .tui-control-bar__background {
     opacity: 0;
@@ -122,9 +129,6 @@
   .slate-section .player__container .tui-start-slate {
     transition: all var(--slate-duration-long) var(--slate-ease-sine);
   }
-
-  /* Color Accents */
-
 
   /* 
     Mobile/Generic first design
